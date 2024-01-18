@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 2
   m_EditorClassIdentifier: 
   enemy:
-  - {fileID: 2080888313917385330, guid: a97dde11c14764d4a8b840c9e124924a, type: 3}
-  enemyPerWave: 5
-  nextWave: {fileID: 11400000, guid: 6b6a7e477e593314895847a136ff6ec1, type: 2}
+  - {fileID: 8106964004745069248, guid: 5a462e080510b9647a01921ecd3abe0b, type: 3}
+  enemyPerWave: 20
+  nextWave: {fileID: 0}

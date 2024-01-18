@@ -9,8 +9,10 @@ public class DropItem : MonoBehaviour
         {
             Debug.Log("Ngapain?");
 
-            PlayerHealth playerHealth = other.GetComponent<PlayerHealth>();
-            playerHealth.health++;
+            //PlayerHealth playerHealth = other.GetComponent<PlayerHealth>();
+            CountResources playerResources = other.GetComponent<CountResources>();
+            playerResources.resourcesCount++;
+            //playerHealth.health++;
 
             Destroy(gameObject);
         }

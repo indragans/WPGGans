@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
+
 
 public class PlayerHealth : MonoBehaviour
 {
+    public GameManagerScript gameManager;
     public int maxHealth;
     public int health;
 
@@ -16,6 +19,8 @@ public class PlayerHealth : MonoBehaviour
     private new Rigidbody2D rigidbody2D;
 
     public UnityEvent OnBegin, OnDone;
+
+    //private bool isDead;
 
     void Start()
     {
@@ -30,7 +35,10 @@ public class PlayerHealth : MonoBehaviour
             playerSr.enabled = false;
             playerMovement.enabled = false;
 
+            //isDead=true;
+            //gameObject.SetActive(false);
             Destroy(gameObject);
+            //gameManager.gameOver();
         }
     }
 
@@ -55,4 +63,6 @@ public class PlayerHealth : MonoBehaviour
         // rigidbody2D.AddForce(direction * strength, ForceMode2D.Impulse);
         StartCoroutine(Reset());
     }
+
+    
 }

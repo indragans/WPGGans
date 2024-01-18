@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy:
   - {fileID: 2080888313917385330, guid: a97dde11c14764d4a8b840c9e124924a, type: 3}
-  enemyPerWave: 2
-  nextWave: {fileID: 11400000, guid: 8062ca82f0837794c8545e67a5672ba1, type: 2}
+  enemyPerWave: 14
+  nextWave: {fileID: 0}

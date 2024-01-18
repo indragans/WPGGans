@@ -14,10 +14,11 @@ GameObject:
   - component: {fileID: 924620150081607718}
   - component: {fileID: 750591858056903589}
   - component: {fileID: 3076188898050641888}
+  - component: {fileID: 683905255182637433}
   - component: {fileID: 1310199940027084141}
   - component: {fileID: 1860848940860085996}
   - component: {fileID: 2787096103519437786}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Player Lay2
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -81,7 +82,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 10
   m_Sprite: {fileID: -1531608358, guid: 1e80b553e9301584ba4892ba8b1627ba, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -177,6 +178,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &683905255182637433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3281165798708141175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a86983cec809a54d85797203064c6c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resourcesCount: 0
+  countText: {fileID: 0}
 --- !u!61 &1310199940027084141
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -217,8 +232,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 3
   health: 0
+  strength: 16
+  delay: 0.15
   playerSr: {fileID: 5711467225044363692}
   playerMovement: {fileID: 2787096103519437787}
+  OnBegin:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDone:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &2787096103519437786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -253,7 +276,7 @@ GameObject:
   - component: {fileID: 1723694398707176306}
   - component: {fileID: 5664314770918734958}
   - component: {fileID: 6782533256745781955}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Gun Lay3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -351,7 +374,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5447890104956987380}
   - component: {fileID: 2235810420516309402}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -399,7 +422,7 @@ GameObject:
   - component: {fileID: 5662690831107130005}
   - component: {fileID: 5662690831107130007}
   - component: {fileID: 5662690831107130004}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: heart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -475,7 +498,7 @@ GameObject:
   - component: {fileID: 5662690831719871643}
   - component: {fileID: 5662690831719871645}
   - component: {fileID: 5662690831719871642}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: heart (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -551,7 +574,7 @@ GameObject:
   - component: {fileID: 5662690831824715471}
   - component: {fileID: 5662690831824715457}
   - component: {fileID: 5662690831824715470}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: heart (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -627,7 +650,7 @@ GameObject:
   - component: {fileID: 5662690831922615720}
   - component: {fileID: 5662690831922615722}
   - component: {fileID: 5662690831922615723}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: heart (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -703,7 +726,7 @@ GameObject:
   - component: {fileID: 5662690832406215418}
   - component: {fileID: 5662690832406215420}
   - component: {fileID: 5662690832406215421}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: heart (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -780,7 +803,7 @@ GameObject:
   - component: {fileID: 5662690832499001185}
   - component: {fileID: 5662690832499001198}
   - component: {fileID: 5662690832499001199}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 2080888313917385341}
   - component: {fileID: 2080888313917385340}
   - component: {fileID: 2080888313917385314}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: PHD Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -33,7 +33,7 @@ Transform:
   m_GameObject: {fileID: 2080888313917385330}
   m_LocalRotation: {x: 0, y: -0, z: 0.0061085457, w: -0.99998134}
   m_LocalPosition: {x: 13.4141, y: 2.46612, z: 0}
-  m_LocalScale: {x: 2.6065452, y: 3.186536, z: 1}
+  m_LocalScale: {x: 4, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -214,7 +214,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 100
-  itemToDrop: {fileID: 7540991319564531942, guid: ded087288a9918341b3503ec3c270891, type: 3}
+  itemToDropArray: {fileID: 7540991319564531942, guid: ded087288a9918341b3503ec3c270891, type: 3}
 --- !u!114 &2080888313917385314
 MonoBehaviour:
   m_ObjectHideFlags: 0

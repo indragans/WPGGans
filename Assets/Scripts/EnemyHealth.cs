@@ -7,11 +7,13 @@ public class EnemyHealth : MonoBehaviour
     public int maxHealth;
     public int currentHealth;
 
-    public GameObject itemToDrop;
+    public QuestManajer questManajer;
+    public GameObject/*[]*/ itemToDropArray;    //list enemy
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxHealth;
+        questManajer = GameObject.FindObjectOfType<QuestManajer>();
     }
 
     // Update is called once per frame
@@ -23,10 +25,12 @@ public class EnemyHealth : MonoBehaviour
     public void TakeDamage(int damage){
         currentHealth -= damage;
         if(currentHealth <= 0){
-            Instantiate(itemToDrop, transform.position, Quaternion.identity);
-            
+            //Instantiate(itemToDropArray[Random.Range(0, itemToDropArray.Length - 1)], transform.position, Quaternion.identity);
+            Instantiate(itemToDropArray, transform.position, Quaternion.identity);
+
             Destroy(this.gameObject);
             WaveHandler.Instance.enemyIsKilled();
+            questManajer.EnemyDefeated();
         }
     }
 }
